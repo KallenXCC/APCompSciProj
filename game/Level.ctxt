@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Level
+comment1.params=refText\ fontSize\ textColor\ backgroundColor
+comment1.target=Level(java.lang.String,\ int,\ java.awt.Color,\ java.awt.Color)
+comment2.params=
+comment2.target=void\ act()
+numComments=3

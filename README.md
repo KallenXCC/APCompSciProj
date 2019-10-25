@@ -1,5 +1,4 @@
 # Rock Collector
-Download and launch executable jar file to play.
 Rock Collector Manual
 	You are a rock collector working for a company. Your job is to collect rocks for your company and not aliens, and maybe a few fries to woo them over; all the while keeping yourself alive. To collect something for your company, let it pass behind you in space and they will get it. Basically you are their sorter. To sort things, shoot the things they do not want, and do not shoot the things they do want. Good luck!
 •	Use the arrow keys to move

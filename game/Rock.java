@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.awt.Color;
+import greenfoot.Color;
 import java.awt.Font;
 /**
  * @author BuckLe Byhan

@@ -1,5 +1,5 @@
 import greenfoot.*;
-import java.awt.Color; 
+import greenfoot.Color; 
 /**
  * @author BuckLe Byhan
  * @version 2013
@@ -12,12 +12,12 @@ public class SpaceWorld extends World
     public Bar bar = new Bar("Company's Satisfaction", "", 100, 100);
     public Bar bar2 = new Bar("Rocket Health", "", 100, 100);
     public Bar bar3 = new Bar("Boss Health", "", 100, 100);
-    public Score score = new Score("Score: 0", 20, Color.CYAN, Color.black);
+    public Score score = new Score("Score: 0", 20, Color.CYAN, Color.BLACK);
     public rocket rocket = new rocket();
-    public Level levelOne = new Level("LEVEL ONE", 96, Color.RED, Color.black);
+    public Level levelOne = new Level("LEVEL ONE", 96, Color.RED, Color.BLACK);
     public Level levelTwo = new Level("LEVEL TWO", 96, Color.RED, new Color(33, 33, 133));
-    public Level finalLevel = new Level("FINAL LEVEL", 96, Color.black, new Color(133, 33, 33));
-    public Congratulations congratulations = new Congratulations("CONGRATULATIONS", 96, Color.white, new Color(133, 33, 33));
+    public Level finalLevel = new Level("FINAL LEVEL", 96, Color.BLACK, new Color(133, 33, 33));
+    public Congratulations congratulations = new Congratulations("CONGRATULATIONS", 96, Color.WHITE, new Color(133, 33, 33));
     public AlienBoss alienBoss = new AlienBoss();
     public int rate = 90;
     public int timer = 0; 
@@ -118,7 +118,7 @@ public class SpaceWorld extends World
     private void createBackgroundImage()  
     {  
         bgImg = new GreenfootImage(getWidth(), getHeight());  
-        bgImg.setColor(Color.black);  
+        bgImg.setColor(Color.BLACK);  
         bgImg.fill();  
         bgImg.setColor(Color.WHITE);  
         for (int i = 0; i < starCount; i++)  
@@ -137,7 +137,7 @@ public class SpaceWorld extends World
             bgImg2 = new GreenfootImage(getWidth(), getHeight());  
             bgImg2.setColor(new Color(33, 33, 133));  
             bgImg2.fill();  
-            bgImg2.setColor(Color.yellow);  
+            bgImg2.setColor(Color.YELLOW);  
             for (int i = 0; i < starCount2; i++)  
             {  
                 int x = Greenfoot.getRandomNumber(getWidth());  
@@ -158,7 +158,7 @@ public class SpaceWorld extends World
             bgImg3 = new GreenfootImage(getWidth(), getHeight());  
             bgImg3.setColor(new Color(133, 33, 33));  
             bgImg3.fill();  
-            bgImg3.setColor(Color.black);  
+            bgImg3.setColor(Color.BLACK);  
             for (int i = 0; i < starCount3; i++)  
             {  
                 int x = Greenfoot.getRandomNumber(getWidth());  

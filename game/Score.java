@@ -1,5 +1,5 @@
 import greenfoot.*;
-import java.awt.Color;
+import greenfoot.Color;
 public class Score extends Actor
 {
     private int totalScore = 0;
@@ -22,7 +22,7 @@ public class Score extends Actor
         totalScore += amount;
         if(totalScore<200)
         {
-            setImage(new GreenfootImage("Score:" + totalScore, 18, Color.CYAN, Color.black));
+            setImage(new GreenfootImage("Score:" + totalScore, 18, Color.CYAN, Color.BLACK));
         }
         if((totalScore>=200)&&(totalScore<700))
         {

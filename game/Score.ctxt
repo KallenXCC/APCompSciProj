@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Score
 comment1.params=refText\ fontSize\ textColor\ backgroundColor
-comment1.target=Score(java.lang.String,\ int,\ java.awt.Color,\ java.awt.Color)
+comment1.target=Score(java.lang.String,\ int,\ greenfoot.Color,\ greenfoot.Color)
 comment2.params=
 comment2.target=int\ getTotalScore()
 comment3.params=amount

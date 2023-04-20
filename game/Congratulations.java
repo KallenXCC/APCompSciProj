@@ -1,5 +1,5 @@
 import greenfoot.*;
-import java.awt.Color;
+import greenfoot.Color;
 
 public class Congratulations extends Actor
 {

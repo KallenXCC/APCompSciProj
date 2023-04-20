@@ -1,5 +1,5 @@
 import greenfoot.*;
-import java.awt.Color;
+import greenfoot.Color;
 import java.awt.Font;
 /**
  * @author BuckLe Byhan

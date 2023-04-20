@@ -65,7 +65,7 @@ public class SpaceWorld extends World
     public Bar getBar(){ return bar; }
 
     public Bar getBar2(){return bar2;}
-    
+
     public Bar getBar3(){return bar3;}
 
     public Score getScore(){ return score; }
@@ -104,6 +104,7 @@ public class SpaceWorld extends World
         createBackgroundImage();  
         addObject(rocket, 300, 384);
         addObject(levelOne, getWidth()/2, getHeight()/2);
+        prepare();
     }
     GreenfootImage bgImg = null; 
     int bgX; 
@@ -148,7 +149,7 @@ public class SpaceWorld extends World
             addObject(levelTwo, getWidth()/2, getHeight()/2);
         }
     }
-    
+
     public void modifyLevelAgain()
     {
         if(score.getTotalScore()==700)
@@ -195,7 +196,7 @@ public class SpaceWorld extends World
             setBackground(img2);  
         }
     } 
-    
+
     private void scrollBackground3()
     {
         if(score.getTotalScore()>=700)
@@ -206,5 +207,12 @@ public class SpaceWorld extends World
             img3.drawImage(bgImg3, bgX3 + getWidth(), 0);  
             setBackground(img3);
         }
+    }
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
     }
 }

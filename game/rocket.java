@@ -36,12 +36,14 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(enemy);
+                Greenfoot.playSound("explosionSFX.mp3");
                 bar2.subtract(20);
                 if(bar2.getValue()<=0)
                 {
                     Actor dead = new dead();
                     getWorld().addObject(dead, getX(), getY());
                     getWorld().removeObject(this);
+                    return;
                 }
             }
         }
@@ -53,12 +55,14 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(asteroid);
+                Greenfoot.playSound("explosionSFX.mp3");
                 bar2.subtract(30);
                 if(bar2.getValue()<=0)
                 {
                     Actor dead = new dead();
                     getWorld().addObject(dead, getX(), getY());
                     getWorld().removeObject(this);
+                    return;
                 }
             }
         }
@@ -70,6 +74,7 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(fries);
+                Greenfoot.playSound("healSFX.mp3");
                 bar2.add(40);
             }
         }
@@ -81,12 +86,14 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(potato);
+                Greenfoot.playSound("explosionSFX.mp3");
                 bar2.subtract(30);
                 if(bar2.getValue()<=0)
                 {
                     Actor dead = new dead();
                     getWorld().addObject(dead, getX(), getY());
                     getWorld().removeObject(this);
+                    return;
                 }
             }
         }
@@ -103,6 +110,7 @@ public class rocket extends Actor
                     Actor dead = new dead();
                     getWorld().addObject(dead, getX(), getY());
                     getWorld().removeObject(this);
+                    return;
                 }
             }
         }

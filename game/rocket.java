@@ -113,7 +113,7 @@ public class rocket extends Actor
         if (plasmaLimiter > 0) {
             plasmaLimiter = plasmaLimiter - 1;
         }
-        else if (Greenfoot.isKeyDown("z")) {
+        else if (Greenfoot.isKeyDown("space")) {
             getWorld().addObject(new plasma(), getX()+50, getY());
             Greenfoot.playSound("87402^LASER.mp3");
             plasmaLimiter = 10;

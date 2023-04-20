@@ -1,12 +1,6 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
-
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PROJECT TITLE: Rock Collector
+PURPOSE OF PROJECT: Project for AP Comp Sci in 2013
+VERSION or DATE: Making some updates for fun in 2023
+HOW TO START THIS PROJECT: Open in greenfoot, will try to make an executable later
+AUTHORS: Braeton Buckley
+USER INSTRUCTIONS: Read Rock Collector Manual for gameplay instructions

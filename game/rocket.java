@@ -6,6 +6,9 @@ import greenfoot.*;
 public class rocket extends Actor
 {
     private int plasmaLimiter = 0;
+    GreenfootSound explosionSFX = new GreenfootSound("explosionSFX.mp3");
+    GreenfootSound healSFX = new GreenfootSound("healSFX.mp3");
+    GreenfootSound laserSFX = new GreenfootSound("87402^LASER.mp3");
 
     public void act() 
     {
@@ -36,7 +39,8 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(enemy);
-                Greenfoot.playSound("explosionSFX.mp3");
+                explosionSFX.setVolume(30);
+                explosionSFX.play();
                 bar2.subtract(20);
                 if(bar2.getValue()<=0)
                 {
@@ -55,7 +59,8 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(asteroid);
-                Greenfoot.playSound("explosionSFX.mp3");
+                explosionSFX.setVolume(50);
+                explosionSFX.play();
                 bar2.subtract(30);
                 if(bar2.getValue()<=0)
                 {
@@ -74,7 +79,8 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(fries);
-                Greenfoot.playSound("healSFX.mp3");
+                healSFX.setVolume(90);
+                healSFX.play();
                 bar2.add(40);
             }
         }
@@ -86,7 +92,8 @@ public class rocket extends Actor
                 SpaceWorld spaceWorld = (SpaceWorld) getWorld();
                 Bar bar2 = spaceWorld.getBar2();
                 getWorld().removeObject(potato);
-                Greenfoot.playSound("explosionSFX.mp3");
+                explosionSFX.setVolume(30);
+                explosionSFX.play();
                 bar2.subtract(30);
                 if(bar2.getValue()<=0)
                 {
@@ -123,7 +130,8 @@ public class rocket extends Actor
         }
         else if (Greenfoot.isKeyDown("space")) {
             getWorld().addObject(new plasma(), getX()+50, getY());
-            Greenfoot.playSound("87402^LASER.mp3");
+            laserSFX.setVolume(30);
+            laserSFX.play();
             plasmaLimiter = 10;
         }
     }

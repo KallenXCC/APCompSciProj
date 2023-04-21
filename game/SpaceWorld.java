@@ -6,7 +6,7 @@ import greenfoot.Color;
  */
 public class SpaceWorld extends World
 {
-    GreenfootSound backgroundMusic = new GreenfootSound("05 Les Betes (EM05_B).wav");  
+    GreenfootSound backgroundMusic = new GreenfootSound("05 Les Betes (EM05_B).wav");
     GreenfootSound finalBackgroundMusic = new GreenfootSound("10 Showdown (EM05_A).wav");
     GreenfootSound celebrationMusic = new GreenfootSound("Celebration.wav");
     public Bar bar = new Bar("Company's Satisfaction", "", 100, 100);
@@ -21,14 +21,14 @@ public class SpaceWorld extends World
     public AlienBoss alienBoss = new AlienBoss();
     public int rate = 90;
     public int timer = 0; 
-    public int potatorate = 20;
+    public int potatorate = 11;
     public void act()
     {
         if(Greenfoot.getRandomNumber(rate*2) < 1) 
             addObject(new alien(), 1020, Greenfoot.getRandomNumber(83)*8+100); //1 in (rate) chance of spawning a alien 
         if(Greenfoot.getRandomNumber(rate*4) < 1)
             addObject(new alien2(), 1020, Greenfoot.getRandomNumber(83)*8+100);   
-        if(Greenfoot.getRandomNumber(rate*10) < 1)
+        if(Greenfoot.getRandomNumber(rate*9) < 1)
             addObject(new alien3(), 1020, Greenfoot.getRandomNumber(83)*8+100);   
         if(Greenfoot.getRandomNumber(rate) < 1)
         {
@@ -57,6 +57,7 @@ public class SpaceWorld extends World
                 removeObject(alienBoss);
                 addObject(congratulations, getWidth()/2, getHeight()/2);
                 finalBackgroundMusic.stop();
+                celebrationMusic.setVolume(30);
                 celebrationMusic.playLoop();
             }
         }
@@ -94,6 +95,7 @@ public class SpaceWorld extends World
     public SpaceWorld()
     {     
         super(1024, 768, 1); 
+        backgroundMusic.setVolume(30);
         backgroundMusic.playLoop();  
         addObject(bar, 225, 40);
         addObject(bar2, 500, 40);
@@ -155,6 +157,7 @@ public class SpaceWorld extends World
         if(score.getTotalScore()==700)
         {
             backgroundMusic.stop();
+            finalBackgroundMusic.setVolume(30);
             finalBackgroundMusic.playLoop();
             bgImg3 = new GreenfootImage(getWidth(), getHeight());  
             bgImg3.setColor(new Color(133, 33, 33));  

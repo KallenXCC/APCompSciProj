@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MenuWorld
+comment0.text=\r\n\ World\ Class\ 'MenuWorld'\:\ A\ world\ to\ demonstrate\ the\ usage\ of\ the\ Support\ Actor\ Classes\ \r\n\ 'Button'\ and\ 'Menu'\r\n\ \r\n\ Author\:\ danpost\r\n\ Version\:\ 2.1\ \ June\ 23,\ 2012\r\n
+comment1.params=
+comment1.target=MenuWorld()
+comment1.text=\r\n\ Constructor\ MenuWorld\:\ create\ a\ world\ of\ specified\ width\ (WIDE)\ and\ height\ (HIGH)\r\n\ with\ a\ grid-size\ of\ 1;\ also\ adds\ an\ Instruct\ object\ giving\ instructions\r\n
+comment2.params=
+comment2.target=void\ started()
+comment2.text=\r\n\ Method\ 'started'\:\ removes\ the\ Instruct\ object\ (or\ Menu\ object\ with\ Button\ objects)\r\n\ from\ the\ world,\ and\ places\ several\ non-menu\ buttons\ in\ the\ world\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Method\ 'act'\:\ re-acts\ to\ button\ clicks\ and\ displays\ a\ new\ menu\ if\ all\ objects\ were\ removed\ from\ the\ world\r\n
+numComments=4

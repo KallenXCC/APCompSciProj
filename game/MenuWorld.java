@@ -37,8 +37,6 @@ public class MenuWorld extends World
      */
     public void started()
     {
-        removeObjects(getObjects(null));
-        menu = null;
         menuNumber = MAX_MENU_CT - 1;
         Button.defaultButtonHeight = 30;
         Button.defaultRounded = false;
@@ -49,8 +47,6 @@ public class MenuWorld extends World
         Button start = new Button("Start", 1);
         addObject(start, WIDE / 2, HIGH - 50);
         start.setButtonWidth(50);
-        Text info = new Text("Rock Collector Manual:", 24, Color.WHITE, Color.BLACK);
-        addObject(info, 24, 12);
     }
 
     /**
@@ -68,7 +64,7 @@ public class MenuWorld extends World
                 removeObjects(getObjects(Button.class));
                 break; // 'New menu' (non-menu) button object was clicked
             default:
-                removeObjects(getObjects(Button.class));
+                removeObjects(getObjects(null));
                 if(menu != null) menu.removeMenu();
                 menu = null;
                 Greenfoot.setWorld(new SpaceWorld());
